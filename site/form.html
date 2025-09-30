@@ -9,9 +9,15 @@
 </head>
 <body>
   <header>
-    <h1><!-- TODO: Lomake-sivun H1 --></h1>
+    <h1>LOMAKE<!-- TODO: Lomake-sivun H1 --></h1>
     <nav aria-label="Päävalikko">
       <!-- TODO: Sama navigaatio kuin muilla sivuilla -->
+      <ul>
+      <li><a href="index.html">Etusivu</a></li>
+      <li><a href="table.html">Taulukko</a></li>
+      <li><a href="form.html">Lomake</a></li>
+      <li><a href="image.html">Kuva</a></li>
+      </ul>
     </nav>
   </header>
   <main>
@@ -21,9 +27,26 @@
          - method ja action attribuutit
          - submit-painike
     -->
+         <form action="#" method="post">
+          <label for="fname">Etunimi:</label><br>
+          <input type="text" id="fname" name="fname"><br>
+          <label for="lname">Sukunimi:</label><br>
+          <input type="text" id="lname" name="lname"><br>
+
+          <label for="email">Sähköposti:</label><br>
+          <input type="email" id="email" name="email"><br>
+          <label for="pnumber">Puhelinnumero:</label><br>
+          <input type="text" id="pnumber" name="pnumber"><br>
+
+          <label for="age">Enter your age:</label><br>
+          <input type="number" id="age" name="age" min="1" max="120"><br>
+          <input type="submit" value="Submit">
+         </form>
   </main>
   <footer>
     <!-- TODO: Footer -->
+     <p>Author: Kasper Leiviskä</p>
+     <p><a href="mailto:kasperL@example.com">kasperL@example.com</a></p>
   </footer>
 </body>
 </html>
